@@ -2,6 +2,7 @@
 import Button from "./Components/Button"
 import HabitForm from "./Components/HabitForm"
 import { Header } from "./Components/Header"
+import HabitList from "./Components/HabitList"
 
 export default function App(){
   return (
