@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+#border{
+    border: 2px solid red
+}
+
+body{
+    background-color: var(--color-zinc-900);
+    color: var(--color-zinc-100)
+}
