@@ -26,7 +26,7 @@ function HabitList(){
 
 
 function HabitItem({habit}){
-
+    const visibleDates = [new Date() ,new Date(), new Date()]
 
     return(
         <div id="border" className="rounded-xl bg-zinc-800 p-4 flex flex-col gap-3">
@@ -39,8 +39,16 @@ function HabitItem({habit}){
                 </div>
                 <Button>Delete</Button>
             </div> 
-            <div className="flex gap-1.5">
-                map
+            <div   className="flex gap-1.5">
+                 {visibleDates.map( (dates) => (<Button  key={dates.toISOString()}>
+                    <span className="font-medium">Mon</span>
+                    <span>2</span>
+                 </Button>))}
+                 {visibleDates.map( (dates) => (<Button value="hahah">
+shs
+dtrh 
+                 </Button>))}
+
             </div>
         </div>
     )
